@@ -26,7 +26,7 @@ class DeNormalize(object):
 
 class MaskToTensor(object):
     def __call__(self, img):
-        return torch.from_numpy(np.array(img, dtype=np.int32)).long()
+        return torch.from_numpy(np.array(img, dtype=int)).long()
 
 
 class FreeScale(object):

@@ -2,7 +2,7 @@ import numpy as np
 
 
 def vec3(x, y, z):
-    return np.array([x, y, z], dtype=np.float32)
+    return np.array([x, y, z], dtype=float)
 
 
 def radians(v):
@@ -10,11 +10,11 @@ def radians(v):
 
 
 def identity():
-    return np.identity(4, dtype=np.float32)
+    return np.identity(4, dtype=float)
 
 
 def empty():
-    return np.zeros([4, 4], dtype=np.float32)
+    return np.zeros([4, 4], dtype=float)
 
 
 def magnitude(v):
